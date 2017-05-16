@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:orientation="vertical"
+tools:context="com.example.survingandmapping.DaoXianBegin">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="测站："/>
+    <EditText
+        android:id="@+id/cezhan"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content" />
+</LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="观测角："/>
+    <EditText
+        android:id="@+id/du"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="度"/>
+    <EditText
+        android:id="@+id/fen"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="分"/>
+    <EditText
+        android:id="@+id/miao"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="秒"/>
+</LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <TextView
+        android:id="@+id/disT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="观测距离："/>
+    <EditText
+        android:id="@+id/dis"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/addToList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="迁至下一站"/>
+    <Button
+        android:id="@+id/pcBegin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="进行平差"/>
+</LinearLayout>
+<View
+    android:layout_width="match_parent"
+    android:layout_height="5dp"
+    android:background="#000"></View>
+<android.support.v7.widget.RecyclerView
+    android:id="@+id/recycler_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+</android.support.v7.widget.RecyclerView>
+</LinearLayout>
+
+
