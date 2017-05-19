@@ -130,7 +130,7 @@ public class DaoXianActivity extends AppCompatActivity {
                 break;
             case R.id.sz:
 
-                Intent intent=new Intent(DaoXianActivity.this,Suizhun.class);
+                Intent intent=new Intent(DaoXianActivity.this,ShuizhunActivity.class);
                 startActivity(intent);
                 break;
             default:break;

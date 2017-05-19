@@ -12,7 +12,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 //水准测量
-public class Suizhun extends AppCompatActivity {
+public class ShuizhunActivity extends AppCompatActivity {
 
     public EditText _one;
     public EditText _two;
@@ -71,7 +71,7 @@ public class Suizhun extends AppCompatActivity {
                     return;
                 }
                 process(intent);
-                Intent intent=new Intent(Suizhun.this,SuizhunResult.class);
+                Intent intent=new Intent(ShuizhunActivity.this,ShuizhunResult.class);
                 intent.putExtra("前视距",twelve);
                 intent.putExtra("后视距",thirteen);
                 intent.putExtra("当前视差",fourtheen);
@@ -108,7 +108,7 @@ public class Suizhun extends AppCompatActivity {
                 Toast.makeText(this,"你正处于水准测量界面",Toast.LENGTH_SHORT).show();
                 break;
             case R.id.dx:
-                Intent intent=new Intent(Suizhun.this,DaoXianActivity.class);
+                Intent intent=new Intent(ShuizhunActivity.this,DaoXianActivity.class);
                 startActivity(intent);
                 break;
             default:
@@ -120,7 +120,7 @@ public class Suizhun extends AppCompatActivity {
             Double.valueOf(str);
             return true;
         } catch (NumberFormatException e) {
-            Toast.makeText(Suizhun.this,"输入含有非数字",Toast.LENGTH_SHORT).show();
+            Toast.makeText(ShuizhunActivity.this,"输入含有非数字",Toast.LENGTH_SHORT).show();
             return false;
         }
     }
@@ -131,7 +131,7 @@ public class Suizhun extends AppCompatActivity {
                 ||_seven.getText().toString().equals("")||_eight.getText().toString().equals("")
                 ||_K1.getText().toString().equals("")||_K2.getText().toString().equals("")
                 ||station.getText().toString().equals("")){
-            Toast.makeText(Suizhun.this,"输入不完整，请重新输入",Toast.LENGTH_SHORT).show();
+            Toast.makeText(ShuizhunActivity.this,"输入不完整，请重新输入",Toast.LENGTH_SHORT).show();
             return false;
         }
         boolean flag=true;

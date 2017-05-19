@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-public class SuizhunResult extends AppCompatActivity {
+public class ShuizhunResult extends AppCompatActivity {
 
     private TextView hsj;
     private TextView qsj;
@@ -68,7 +68,7 @@ public class SuizhunResult extends AppCompatActivity {
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent2=new Intent(SuizhunResult.this,Suizhun.class);
+                Intent intent2=new Intent(ShuizhunResult.this,ShuizhunActivity.class);
                 intent2.putExtra("累积视差",intent.getFloatExtra("累积视差",0));
                 intent2.putExtra("测站",intent.getStringExtra("测站"));
                 startActivity(intent2);
