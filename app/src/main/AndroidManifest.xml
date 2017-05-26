@@ -14,7 +14,8 @@
         <activity
             android:name=".ShuizhunActivity"
             android:label="水准测量" />
-        <activity android:name=".ShuizhunResult" />
+        <activity android:name=".ShuizhunResult"
+            android:label="本站结果"/>
         <activity
             android:name=".DaoXianActivity"
             android:label="导线测量" />

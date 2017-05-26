@@ -42,9 +42,6 @@ public class StationAdapter extends RecyclerView.Adapter<StationAdapter.ViewHold
     @Override
     public void onBindViewHolder(StationAdapter.ViewHolder holder, int position) {
         Station station=stationList.get(position);
-        if(stationList.size()==1){
-            holder.Spjl.setVisibility(View.INVISIBLE);
-        }
         holder.stationId.setText("测站:"+station.getCeZhan());
         holder.Spjl.setText("水平距离："+station.getDis());
         holder.Jiao.setText("观测角："+station.getGuanCeJ().getDu()+"度"+station.getGuanCeJ().getFen()+"分"

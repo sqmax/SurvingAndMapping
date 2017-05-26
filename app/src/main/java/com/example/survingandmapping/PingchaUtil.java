@@ -17,11 +17,11 @@ public class PingchaUtil {
     public static PingchaUtil.ZuoBiao begin;
     public static PingchaUtil.ZuoBiao end;
     //表示各站观测角
-    public static ArrayList<PingchaUtil.Jiao> guancejiaoList=new ArrayList<>();
+    public static ArrayList<Jiao> guancejiaoList=new ArrayList<>();
     //表示各站观测距离
     public static ArrayList<Double> disList=new ArrayList<>();
     //平差结果,即各点坐标
-    public static ArrayList<PingchaUtil.ZuoBiao> resultList=new ArrayList<>();
+    public static ArrayList<ZuoBiao> resultList=new ArrayList<>();
 
     //该函数用于整个导线的平差计算
     public static void calPingcha(){
@@ -29,11 +29,11 @@ public class PingchaUtil {
         //改正数/mm
         int[] gaizengshu=new int[n];
         //坐标方位角
-        ArrayList<PingchaUtil.Jiao> zuobiaoFangWeiJiao=new ArrayList<>();
+        ArrayList<Jiao> zuobiaoFangWeiJiao=new ArrayList<>();
         //增量
-        ArrayList<PingchaUtil.ZuoBiao> zengliang=new ArrayList<>();
+        ArrayList<ZuoBiao> zengliang=new ArrayList<>();
         //改后增量
-        ArrayList<PingchaUtil.ZuoBiao> gaihouZL=new ArrayList<>();
+        ArrayList<ZuoBiao> gaihouZL=new ArrayList<>();
 
         PingchaUtil.Jiao sum=baFangwei;
         for(PingchaUtil.Jiao jiao:guancejiaoList){
