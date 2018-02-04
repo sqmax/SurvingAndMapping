@@ -3,7 +3,7 @@
 
 
 ###效果
-![img](screenshot/1.png)
+![img](screenshot/1.png =100x100)
 ![img](screenshot/2.png)
 ![img](screenshot/4.png)
 ![img](screenshot/5.png)
