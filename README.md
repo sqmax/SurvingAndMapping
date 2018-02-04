@@ -4,7 +4,7 @@
 
 ###效果
 ![img](screenshot/1.png =100x100)
-<img src="2.png" width="50%"/>
+<img src="screenshot/2.png" width="50%"/>
 ![img](screenshot/2.png)
 ![img](screenshot/4.png)
 ![img](screenshot/5.png)
