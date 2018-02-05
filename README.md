@@ -10,7 +10,8 @@
 
 ### 导线测量
 
-<img src="screenshot/4.png" width="40%" height="30%"/>&nbsp;<img src="screenshot/5.png" width="40%" height="30%"/>&nbsp;<img src="screenshot/6.png" width="40%" height="30%"/>&nbsp;<img src="screenshot/7.png" width="40%" height="30%"/>
+<img src="screenshot/4.png" width="40%" height="30%"/>&nbsp;<img src="screenshot/5.png" width="40%" height="30%"/>
+<img src="screenshot/6.png" width="40%" height="30%"/>&nbsp;<img src="screenshot/7.png" width="40%" height="30%"/>
 
 
 
